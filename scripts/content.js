@@ -7,7 +7,6 @@ function removeAds() {
   for (let elem of elems) {
     let className = elem.className;
     if (typeof className != "string") continue;
-    className = className.trim();
     let shouldRemove = elem.className.includes("reklam");
     if (shouldRemove) {
       elem.innerHTML = "";
